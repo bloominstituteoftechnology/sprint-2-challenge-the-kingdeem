@@ -33,17 +33,8 @@
       if (x < 1 || y < 1 || x > 3 || y > 3) {
         return 'invalid coordinates'
       }
-      /* if (grid[1,1] || grid[1,3] || grid[2,2] || grid[3,1] || grid[3,2]) {
-        return "🟥 💀"
-      } 
-      if (grid[1,2] || grid[2,1] || grid[2,3] || grid[3,3]) {
-        return "🟦 🥳"
-      } */
-      //const xIndex = x - 1;
-      //const yIndex = y - 1
 
       let box = grid[y - 1] [x - 1];
-      //console.log("box " + box)
       if (box === '🟥') {
         return "🟥 💀"
       }
@@ -60,10 +51,8 @@
         return 'shorten all prop names to 9 chars or less'
         }
       }
-      
-      //let properValue = {}
+    
       for (let i in obj) {
-      //value = obj[i]
         if (obj[i] === 0) {
         obj[i] = false
         }
@@ -78,15 +67,6 @@
 
     // 👉 CHALLENGE 4
     function scrub(text, forbidden) {
-    /* let separate = text.split(' ')
-    // let xWord = []
-    // let forbiddenWord = []
-    for (let i in text) {
-      let words = separate[i]
-      if (words !== forbidden) {
-        return text
-      }
-    } */
 
     if (text === "") {
         return "";
